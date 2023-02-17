@@ -1,0 +1,14 @@
+//shred untuk 'file'   
+admin@akomsentani:~$ shred [OPTION]
+
+//shred untuk 'disk'
+admin@akomsentani:~$ shred -vfz [/file/system/path]
+
+// menimpa & menghapus
+admin@akomsentani:~$ shred -vzu -n5 lorem ipsum.txt
+
+//Disk Drive  (Menghapus Secara Penuh)
+admin@akomsentani:~$ sudo shred -vfz /dev/sda
+
+//Partisi RAID.
+admin@akomsentani:~$ shred -vfz -n 10 /dev/md1 
